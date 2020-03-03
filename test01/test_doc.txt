@@ -1,0 +1,22 @@
+In the for we iterate through the set to which lines points. The body of the for
+prints the line number, adjusted to use human-friendly counting. The numbers in the
+set are indices of elements in the vector, which are numbered from zero. However,
+most users think of the first line as line number 1, so we systematically add 1 to the
+line numbers to convert to this more common notation.
+new Allocates memory from the free store. new T allocates and constructs an
+object of type T and returns a pointer to that object; if T is an array type, new
+returns a pointer to the first element in the array. Similarly, new [n] T allocates
+n objects of type T and returns a pointer to the first element in the array. By
+default, the allocated object is default initialized. We may also provide optional
+initializers.
+Classes are the central concept in C++. Chapter 7 began our detailed coverage of how
+classes are defined. That chapter covered topics fundamental to any use of classes:
+class scope, data hiding, and constructors. It also introduced various important class
+features: member functions, the implicit this pointer, friends, and const, static,
+and mutable members. In this part, we’ll extend our coverage of classes by looking
+at copy control, overloaded operators, inheritance, and templates.
+conversion operators. These operators define implicit conversions from objects of
+class type. The compiler applies these conversions in the same contexts—and for the
+same reasons—as it does with conversions among the built-in types.
+The last two chapters in this part cover how C++ supports object-oriented and
+generic programming.
